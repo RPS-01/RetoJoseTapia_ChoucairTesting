@@ -1,0 +1,7 @@
+junit:junit:4.12
+serenity-core:2.0.82
+serenity-cucumber:1.9.45
+serenity-screenplay:2.0.82
+serenity-screenplay-webdriver:2.0.82
+selenium-server:3.14.0
+chromedriver:108.0.5359.71
