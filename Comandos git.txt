@@ -1,5 +1,0 @@
-git init
-git add -A
-git commit -m "creacion inicial del proyecto"
-git remote add origin https://github.com/RPS-01/RetoJoseTapia-ChoucairTesting.git
-git push -u -f origin master

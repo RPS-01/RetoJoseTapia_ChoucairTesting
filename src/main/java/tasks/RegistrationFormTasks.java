@@ -17,6 +17,8 @@ public class RegistrationFormTasks implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
+            
+                /* Step 1 components: Tell us about yourself */
                 Click.on(locators.Registration.FIRST_NAME),
                 SendKeys.of("Jose").into(locators.Registration.FIRST_NAME),
                 Click.on(locators.Registration.LAST_NAME),
@@ -30,12 +32,18 @@ public class RegistrationFormTasks implements Task {
                 SendKeys.of("1990").into(locators.Registration.DOB_YEAR),
                 SendKeys.of("Spanish").into(locators.Registration.LANGUAGES_BOX).thenHit(Keys.ENTER),
                 Click.on(locators.Registration.SUBMIT),
+
+                /* Step 2 Components: Add your address */
+            
                 Clear.field(Registration.CITY),
                 SendKeys.of("Washington").into(Registration.CITY),
                 Click.on(Registration.CITY_OPTION),
                 Click.on(Registration.ZIP),
                 SendKeys.of("20001").into(Registration.ZIP),
                 Click.on(locators.Registration.SUBMIT),
+
+                /* Step 3 Components: Tell us about your devices */
+
                 Click.on(Registration.LANGUAGE),
                 SendKeys.of("Spanish").into(Registration.LANGUAGE_FIELD).thenHit(Keys.ENTER),
                 Click.on(Registration.MOBILE),
@@ -45,6 +53,9 @@ public class RegistrationFormTasks implements Task {
                 Click.on(Registration.OS),
                 SendKeys.of("Android 12").into(Registration.OS_FIELD).thenHit(Keys.ENTER),
                 Click.on(locators.Registration.SUBMIT),
+
+                /* Step 4 Components: Set up your password */
+
                 SendKeys.of("Choucairautomationtest123").into(Registration.PASSWORD),
                 SendKeys.of("Choucairautomationtest123").into(Registration.CONFIRM_PASSWORD),
                 Click.on(locators.Registration.TERMS),

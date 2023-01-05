@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Registration Form" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-05T21:41:47" hostname="LAPTOP-N4HO93IU" time="71.127">
+<testsuite name="Registration Form" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-05T22:42:54" hostname="LAPTOP-N4HO93IU" time="66.272">
   <properties/>
-  <testcase name="Succesfully register a new user" classname="Registration Form" time="71.127"/>
+  <testcase name="Succesfully register a new user" classname="Registration Form" time="66.272"/>
   <system-out><![CDATA[User is redirected to welcome page, test passed
 ]]></system-out>
-  <system-err><![CDATA[Jan 05, 2023 4:41:48 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[Jan 05, 2023 5:42:54 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 47347
+Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 3267
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jan 05, 2023 4:41:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jan 05, 2023 5:42:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
