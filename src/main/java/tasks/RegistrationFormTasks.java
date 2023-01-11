@@ -12,6 +12,8 @@ import org.openqa.selenium.Keys;
 import locators.Registration.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
+import java.util.function.IntFunction;
+
 public class RegistrationFormTasks implements Task {
 
     @Override
@@ -34,7 +36,6 @@ public class RegistrationFormTasks implements Task {
                 Click.on(locators.Registration.SUBMIT),
 
                 /* Step 2 Components: Add your address */
-            
                 Clear.field(Registration.CITY),
                 SendKeys.of("Washington").into(Registration.CITY),
                 Click.on(Registration.CITY_OPTION),
@@ -42,7 +43,7 @@ public class RegistrationFormTasks implements Task {
                 SendKeys.of("20001").into(Registration.ZIP),
                 Click.on(locators.Registration.SUBMIT),
 
-                /* Step 3 Components: Tell us about your devices */
+                /* Step #3 Components: Tell us about your devices */
 
                 Click.on(Registration.LANGUAGE),
                 SendKeys.of("Spanish").into(Registration.LANGUAGE_FIELD).thenHit(Keys.ENTER),

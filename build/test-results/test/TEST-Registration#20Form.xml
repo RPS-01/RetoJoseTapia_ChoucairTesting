@@ -1,16 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Registration Form" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-05T22:42:54" hostname="LAPTOP-N4HO93IU" time="66.272">
+<testsuite name="Registration Form" tests="4" skipped="3" failures="0" errors="0" timestamp="2023-01-11T03:01:55" hostname="LAPTOP-N4HO93IU" time="157.768">
   <properties/>
-  <testcase name="Succesfully register a new user" classname="Registration Form" time="66.272"/>
-  <system-out><![CDATA[User is redirected to welcome page, test passed
-]]></system-out>
-  <system-err><![CDATA[Jan 05, 2023 5:42:54 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+  <testcase name="Succesfully register a new user" classname="Registration Form" time="123.61"/>
+  <testcase name="Clicking continue with incomplete form" classname="Registration Form" time="11.176">
+    <skipped/>
+  </testcase>
+  <testcase name="Clicking continue with incomplete form" classname="Registration Form" time="11.512">
+    <skipped/>
+  </testcase>
+  <testcase name="Clicking continue with incomplete form" classname="Registration Form" time="11.454">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[Error when trying to click register buttonnet.serenitybdd.core.exceptions.SerenityManagedException: The following error occurred: disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: unable to connect to renderer)
+  (Session info: chrome=108.0.5359.125)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-N4HO93IU', ip: '192.168.1.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Jose\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55797}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e749603a0d4fd56dbf31a88f72d5901d
+*** Element info: {Using=xpath, value=//a[contains(text(),'Join Today') and (@class='unauthenticated-nav-bar__sign-up')]}
+User is redirected to welcome page, test passed
+Error when trying to open the pagenet.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabledError when trying to open the pagenet.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabledError when trying to open the pagenet.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled]]></system-out>
+  <system-err><![CDATA[Jan 10, 2023 10:01:56 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 3267
+Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 16428
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jan 05, 2023 5:42:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jan 10, 2023 10:01:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1673406128.484][WARNING]: Timed out connecting to Chrome, retrying...
+[1673406136.598][WARNING]: Timed out connecting to Chrome, retrying...
+[1673406144.726][WARNING]: Timed out connecting to Chrome, retrying...
+[1673406152.817][WARNING]: Timed out connecting to Chrome, retrying...
+[1673406160.902][WARNING]: Timed out connecting to Chrome, retrying...
+[1673406169.006][WARNING]: Timed out connecting to Chrome, retrying...
+[1673406177.094][WARNING]: Timed out connecting to Chrome, retrying...
+[1673406185.182][WARNING]: Timed out connecting to Chrome, retrying...
+[1673406193.271][WARNING]: Timed out connecting to Chrome, retrying...
+[1673406201.369][WARNING]: Timed out connecting to Chrome, retrying...
+[1673406209.476][WARNING]: Timed out connecting to Chrome, retrying...
+[1673406217.567][WARNING]: Timed out connecting to Chrome, retrying...
+[1673406225.662][WARNING]: Timed out connecting to Chrome, retrying...
+[1673406233.746][WARNING]: Timed out connecting to Chrome, retrying...
+Jan 10, 2023 10:03:59 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 17825
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jan 10, 2023 10:04:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jan 10, 2023 10:04:10 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 28037
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jan 10, 2023 10:04:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jan 10, 2023 10:04:22 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 18076
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jan 10, 2023 10:04:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

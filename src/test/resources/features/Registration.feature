@@ -8,3 +8,5 @@ Feature: Registration Form
         And the user fills the registration form with valid data
         Then the user is redirected to a welcome page
 
+
+
